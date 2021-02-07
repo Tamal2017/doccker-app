@@ -1,7 +1,24 @@
-<!-- Image and text -->
-<nav class="navbar navbar-succes bg-light">
-    <a class="navbar-brand" href="#">
-        <img src="../../../assets/images/docker.png" width="30" height="30" class="d-inline-block align-top" alt=""> Docker app
-    </a>
+<nav class="navbar  navbar-expand-lg navbar-light bg-light">
+    <img src="../../../assets/images/docker.png" alt="app-logo" width="32px" height="32px">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a [routerLink]="['/user']" routerLinkActive="router-link-active" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/contact']" routerLinkActive="router-link-active" class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/about']" routerLinkActive="router-link-active" class="nav-link" href="#">About</a>
+            </li>
+        </ul>
+        <span class="navbar-text">
+        Welcome to this tutorial!
+      </span>
+    </div>
 </nav>
 <br>
